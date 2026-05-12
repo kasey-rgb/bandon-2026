@@ -1,21 +1,20 @@
 export default function Hero() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
-      {/* Background gradient that evokes Bandon's coastal dunes */}
+      {/* Background: Bandon Dunes course photo with dark overlay */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-ocean-950 via-ocean-900 to-dune-950" />
-        <div
-          className="absolute inset-0 opacity-40"
-          style={{
-            backgroundImage:
-              "radial-gradient(ellipse at 20% 20%, rgba(82,146,158,0.4), transparent 50%), radial-gradient(ellipse at 80% 80%, rgba(184,169,135,0.25), transparent 55%)",
-          }}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/courses/bandon-dunes.jpg"
+          alt=""
+          className="h-full w-full object-cover"
         />
+        <div className="absolute inset-0 bg-gradient-to-b from-dune-950/80 via-dune-950/70 to-dune-950" />
         <div
-          className="absolute inset-0 opacity-[0.06]"
+          className="absolute inset-0 opacity-30"
           style={{
             backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+              "radial-gradient(ellipse at 50% 30%, rgba(15,31,38,0), rgba(21,17,13,0.6) 70%)",
           }}
         />
       </div>
@@ -31,6 +30,9 @@ export default function Hero() {
           </a>
           <a href="#schedule" className="hover:text-gorse-400 transition">
             Schedule
+          </a>
+          <a href="#courses" className="hover:text-gorse-400 transition">
+            Courses
           </a>
           <a href="#roster" className="hover:text-gorse-400 transition">
             Roster

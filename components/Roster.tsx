@@ -1,28 +1,8 @@
 const players = [
-  {
-    name: "Kasey Smith",
-    handle: "The Architect",
-    blurb: "Trip captain. Plans the tee times, signs the scorecards.",
-    photo: "/players/kasey.jpg",
-  },
-  {
-    name: "Kaden Smith",
-    handle: "The Long Ball",
-    blurb: "Outdrives the field. Occasionally finds the fairway.",
-    photo: "/players/kaden.jpg",
-  },
-  {
-    name: "Blake Webster",
-    handle: "The Closer",
-    blurb: "Down two with three to play? That's where he wants you.",
-    photo: "/players/blake.jpg",
-  },
-  {
-    name: "Chase Dorius",
-    handle: "The Magician",
-    blurb: "Short game from another planet. Saves par from anywhere.",
-    photo: "/players/chase.jpg",
-  },
+  { name: "Kasey Smith", photo: "/players/kasey.jpg" },
+  { name: "Kaden Smith", photo: "/players/kaden.jpg" },
+  { name: "Blake Webster", photo: "/players/blake.jpg" },
+  { name: "Chase Dorius", photo: "/players/chase.jpg" },
 ];
 
 export default function Roster() {
@@ -53,18 +33,10 @@ export default function Roster() {
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-dune-950 via-dune-950/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
-                  <div className="text-xs uppercase tracking-[0.3em] text-gorse-400">
-                    {p.handle}
-                  </div>
-                  <div className="mt-1 font-display text-2xl text-dune-100">
+                  <div className="font-display text-2xl text-dune-100">
                     {p.name}
                   </div>
                 </div>
-              </div>
-              <div className="border-t border-dune-100/10 p-5">
-                <p className="text-sm leading-relaxed text-dune-200/80">
-                  {p.blurb}
-                </p>
               </div>
             </div>
           ))}
