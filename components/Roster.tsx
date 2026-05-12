@@ -3,7 +3,7 @@ const players = [
     name: "Kasey Smith",
     handle: "The Architect",
     blurb: "Trip captain. Plans the tee times, signs the scorecards.",
-    photo: "/players/kasey.png",
+    photo: "/players/kasey.jpg",
   },
   {
     name: "Kaden Smith",
