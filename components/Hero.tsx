@@ -34,6 +34,9 @@ export default function Hero() {
           <a href="#courses" className="hover:text-gorse-400 transition">
             Courses
           </a>
+          <a href="#dining" className="hover:text-gorse-400 transition">
+            Dining
+          </a>
           <a href="#roster" className="hover:text-gorse-400 transition">
             Roster
           </a>
